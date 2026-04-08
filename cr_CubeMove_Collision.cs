@@ -5,6 +5,9 @@ public class playerCollision : MonoBehaviour
    
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(collision.collider.name);
+        if(collision.collider.name == "obstacle")
+        {
+            Debug.Log("Game Over");
+        }
     }
 }
