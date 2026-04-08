@@ -2,12 +2,14 @@ using UnityEngine;
 
 public class playerCollision : MonoBehaviour
 {
+
+    public playerMovement movement;
    
     void OnCollisionEnter(Collision collision)
     {
-        if(collision.collider.name == "obstacle")
+        if(collision.collider.tag == "obstacle")
         {
-            Debug.Log("Game Over");
+            movement.enabled = false;
         }
     }
 }
