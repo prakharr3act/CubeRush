@@ -3,8 +3,8 @@ using UnityEngine;
 public class playerCollision : MonoBehaviour
 {
    
-    void OnCollisionEnter( )
+    void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Collided with an object!");
+        Debug.Log(collision.collider.name);
     }
 }
