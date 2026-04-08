@@ -1,17 +1,10 @@
-
 using UnityEngine;
 
 public class playerCollision : MonoBehaviour
 {
    
-    void Start()
+    void OnCollisionEnter( )
     {
-        
-    }
-
-   
-    void Update()
-    {
-        
+        Debug.Log("Collided with an object!");
     }
 }
